@@ -510,6 +510,10 @@
       
       $(document).ready( function() {
         $(play).hide();
+        if(player.paused) {
+          $(play).show();
+          $(pause).hide();
+        }
       });
     </script>
 
