@@ -551,6 +551,13 @@
           $(play).show();
         }
       });
+      
+      player.addEventListener('ended',function(){
+        player.src = "audio/im-yours.mp3";
+        player.pause();
+        player.load();
+        player.play();
+      });
     </script>
 
   </body>
