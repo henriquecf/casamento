@@ -544,11 +544,11 @@
       })
       
       $(document).ready( function() {
+        player.play();
+        $(play).hide();
         if(player.paused) {
           $(pause).hide();
-        }
-        else {
-          $(play).hide();
+          $(play).show();
         }
       });
     </script>
