@@ -32,6 +32,9 @@
 
   <body data-spy="scroll" data-target=".navbar-default">
 
+    <audio id="audio" src="audio/same-mistake.mp3" autoplay loop>
+    </audio>
+
   	<!-- begin:navbar -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
@@ -44,6 +47,10 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand visible-xs" href="#home">Emely & Henrique</a>
+          <a class="navbar-toggle">
+            <i class="fa fa-play-circle-o"></i>
+            <i class="fa fa-pause"></i>
+          </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -55,6 +62,12 @@
           	<li><a href="#photos">Fotos</a></li>
           	<li><a href="#story">História</a></li>
           	<li><a href="#contact">Contato</a></li>
+            <li>
+              <a>
+                <i class="fa fa-play-circle-o"></i>
+                <i class="fa fa-pause"></i>
+              </a>
+            </li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div>
@@ -475,6 +488,30 @@
     <!-- begin:demo-script -->
     <script src="js/demo.js"></script>
     <!-- end:demo-script -->
+    
+    <script type="text/javascript">
+      //Define the player
+      var player = document.getElementById('audio');
+      var play = '.fa-play-circle-o';
+      var pause  = '.fa-pause';
+      //play when play is clicked
+      $(play).click(function(){
+        $(play).hide();
+        $(pause).show();
+        player.play();
+      })
+
+      //pause when pause clicked
+      $(pause).click(function(){
+        $(pause).hide();
+        $(play).show();
+        player.pause();
+      })
+      
+      $(document).ready( function() {
+        $(play).hide();
+      });
+    </script>
 
   </body>
 </html>
