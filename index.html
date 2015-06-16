@@ -32,7 +32,7 @@
 
   <body data-spy="scroll" data-target=".navbar-default">
 
-    <audio id="audio" src="audio/same-mistake.mp3">
+    <audio id="audio">
     </audio>
 
   	<!-- begin:navbar -->
@@ -543,7 +543,16 @@
         player.pause();
       })
       
+      var musicList = ['audio/im-yours.mp3', 'audio/same-mistake.mp3', 'audio/sleep.mp3', 'audio/symphony.mp3']
+      
+      var chooseMusic = function() {
+        var num = Math.floor((Math.random() * musicList.length));
+        return musicList.splice(num, 1)[0]
+      }
+      
       $(document).ready( function() {
+        player.src = chooseMusic();
+        player.load();
         player.play();
         $(play).hide();
         if(player.paused) {
@@ -553,7 +562,7 @@
       });
       
       player.addEventListener('ended',function(){
-        player.src = "audio/im-yours.mp3";
+        player.src = chooseMusic();
         player.pause();
         player.load();
         player.play();
