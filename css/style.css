@@ -549,7 +549,7 @@ a:hover {
 	[4. ABOUT]
 	==============
 */
-#about {
+#about, #friends {
   position: relative;
   width: 100%;
   padding-top: 120px;
@@ -573,15 +573,15 @@ a:hover {
   background-attachment: initial;
 }
 @media (max-width: 600px) {
-  #about {
+  #about, #friends {
     padding-top: 100px;
   }
 }
-#about h2,
+#about h2, #friends h2, #friends p,
 #about p {
   text-align: center;
 }
-#about h2 {
+#about h2, #friends h2 {
   padding: 20px 0 0;
   margin-top: 0;
   margin-bottom: 30px;
@@ -593,11 +593,20 @@ a:hover {
   text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.35);
   text-align: center;
 }
-#about blockquote {
+#friends h2 {
+  font-size: 55px;
+  line-height: 55px;
+  margin-bottom: 60px;
+}
+#friends h2.main-h2 {
+  font-size: 85px;
+  line-height: 85px;
+}
+#about blockquote, #friends blockquote {
   text-align: left;
   color: #aaa;
 }
-#about .about-img {
+#about .about-img, #friends .about-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -645,7 +654,7 @@ a:hover {
   margin-bottom: 5px;
   display: block;
   background-color: transparent;
-  background-image: url('../img/img05.jpg');
+  background-image: url('../img/nossas/eua4.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
@@ -660,6 +669,19 @@ a:hover {
   -o-border-radius: 100%;
   border-radius: 100%;
   overflow: hidden;
+}
+
+.bruna {
+  background-image: url('../img/nossas/bruna.jpg');
+}
+.salyme {
+  background-image: url('../img/nossas/salyme.jpg');
+}
+.lili {
+  background-image: url('../img/nossas/lili.jpg');
+}
+.walerya {
+  background-image: url('../img/nossas/walerya.jpg');
 }
 
 /*
