@@ -549,7 +549,7 @@ a:hover {
 	[4. ABOUT]
 	==============
 */
-#about, #friends {
+#about, #friends, #rsvp {
   position: relative;
   width: 100%;
   padding-top: 120px;
@@ -578,10 +578,10 @@ a:hover {
   }
 }
 #about h2, #friends h2, #friends p,
-#about p {
+#about p, #rsvp h2, #rsvp p {
   text-align: center;
 }
-#about h2, #friends h2 {
+#about h2, #friends h2, #rsvp h2 {
   padding: 20px 0 0;
   margin-top: 0;
   margin-bottom: 30px;
@@ -593,7 +593,7 @@ a:hover {
   text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.35);
   text-align: center;
 }
-#friends h2 {
+#friends h2, #rsvp h2 {
   font-size: 55px;
   line-height: 55px;
   margin-bottom: 60px;
@@ -1704,7 +1704,7 @@ a:hover {
   text-shadow: 2px 1px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
 }
-#contact h5 {
+#contact h5, #rsvp h5 {
   display: block;
   margin-top: 40px;
   margin-bottom: 30px;
@@ -1716,7 +1716,7 @@ a:hover {
   text-align: center;
   text-transform: capitalize;
 }
-#contact h5 span {
+#contact h5 span, #rsvp h5 span {
   background-color: #272727;
   background-image: none;
   -webkit-background-size: initial;
@@ -1757,7 +1757,7 @@ a:hover {
 #contact h2,
 #contact h3,
 #contact h4,
-#contact h5 {
+#contact h5, #rsvp h5 {
   position: relative;
   z-index: 5;
   display: table;
